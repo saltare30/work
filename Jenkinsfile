@@ -6,5 +6,11 @@ pipeline {
                 sh 'python3 main.py'
             }
         }
+        stage('Python version') {
+            steps {
+                sh 'python3 -v'
+            }
+        }
+
     }
 }
